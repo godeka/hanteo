@@ -1,0 +1,7 @@
+.appbar {
+  position: sticky;
+  top: 0;
+  background-color: pink;
+  color: white;
+  height: 3rem;
+}
