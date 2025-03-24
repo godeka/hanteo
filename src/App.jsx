@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import Appbar from "./components/layout/Appbar/Appbar.jsx";
 import Footer from "./components/layout/Footer/Footer.jsx";
 import Content from "./components/layout/Content/Content.jsx";
@@ -23,16 +25,33 @@ const categories = [
 ];
 
 function App() {
+  const [swiper, setSwiper] = useState(null);
   const [currCategory, setCurrCategory] = useState(0);
+
+  const handleClickCategory = (idx) => {
+    setCurrCategory(idx);
+    swiper.slideTo(idx);
+  };
+  const handleSlideCategory = (swiper) => {
+    setCurrCategory(swiper.activeIndex);
+  };
 
   return (
     <div className="App">
       <Appbar
         categories={categories}
         currCategory={currCategory}
-        setCurrCategory={setCurrCategory}
+        handleClickCategory={handleClickCategory}
       />
-      <Content>{categories.find((c) => c.id === currCategory).page}</Content>
+      <Swiper onSlideChange={handleSlideCategory} onSwiper={setSwiper}>
+        {categories.map((category) => {
+          return (
+            <SwiperSlide key={category.id}>
+              <Content>{category.page}</Content>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
       <Footer />
     </div>
   );

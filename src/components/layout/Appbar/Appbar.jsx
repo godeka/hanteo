@@ -1,10 +1,10 @@
 import "./Appbar.css";
 
-export default function Appbar({ categories, currCategory, setCurrCategory }) {
-  const handleClickCategory = (id) => {
-    setCurrCategory(id);
-  };
-
+export default function Appbar({
+  categories,
+  currCategory,
+  handleClickCategory,
+}) {
   return (
     <header className="appbar">
       <ul className="category-list">
