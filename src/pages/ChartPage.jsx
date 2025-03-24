@@ -50,6 +50,7 @@ export default function ChartPage() {
             <SwiperSlide key={item.id} className="banner-wrapper">
               <div className="banner-item">
                 <img src={item.image} />
+                <div className="banner-item-badge">진행 중</div>
                 <div className="banner-item-content">
                   <div className="banner-item-title">{item.title}</div>
                   <div className="banner-item-period">{item.period}</div>
