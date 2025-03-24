@@ -7,10 +7,10 @@ export default function Appbar({ categories, currCategory, setCurrCategory }) {
 
   return (
     <header className="appbar">
-      <ul>
+      <ul className="category-list">
         {categories.map((category) => {
           return (
-            <li key={category.id}>
+            <li key={category.id} className="category-item">
               <button
                 className={
                   currCategory === category.id ? "current-category" : ""
