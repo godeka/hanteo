@@ -7,6 +7,7 @@ import Ranking from "../components/ranking/Ranking";
 
 import firstImage from "../assets/banner/first.jpeg";
 import secondImage from "../assets/banner/second.jpg";
+import thirdImage from "../assets/banner/third.jpg";
 
 import "./ChartPage.css";
 
@@ -25,7 +26,7 @@ const bannerItems = [
   },
   {
     id: 2,
-    image: "",
+    image: thirdImage,
     title: "[Whosfan Cafe] SF9 MINI ALBUM [LOVE]",
     period: "2025.03.11 10:00 - 2025.03.31 18:00",
   },
