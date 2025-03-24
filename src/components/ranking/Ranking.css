@@ -1,12 +1,15 @@
 .ranking-container {
+  height: calc(100%);
+  padding: 10px 20px;
+}
+.ranking-container-bottom {
   height: calc(100% - 220px);
   padding: 10px 20px;
-  overflow-y: hidden;
 }
 .ranking-list {
-  height: 80%;
+  height: 85%;
   padding: 0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .ranking-item {
   display: flex;

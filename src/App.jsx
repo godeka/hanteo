@@ -7,10 +7,11 @@ import Content from "./components/layout/Content/Content.jsx";
 import ChartPage from "./pages/ChartPage.jsx";
 
 import "./App.css";
+import WhookPage from "./pages/WhookPage.jsx";
 
 const categories = [
   { id: 0, title: "차트", page: <ChartPage /> },
-  { id: 1, title: "Whook" },
+  { id: 1, title: "Whook", page: <WhookPage /> },
   { id: 2, title: "이벤트" },
   { id: 3, title: "뉴스" },
   { id: 4, title: "스토어" },

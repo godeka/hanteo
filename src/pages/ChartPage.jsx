@@ -58,7 +58,7 @@ export default function ChartPage() {
           );
         })}
       </Swiper>
-      <Ranking title="실시간" rankingList={rankingList} />
+      <Ranking title="실시간" rankingList={rankingList} size="bottom" />
     </>
   );
 }
