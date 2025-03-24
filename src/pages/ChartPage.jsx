@@ -17,18 +17,21 @@ const bannerItems = [
     image: firstImage,
     title: "[M COUNTDOWN] 10월 2주차 엠카 사전투표",
     period: "2025.03.20 10:00 - 2025.03.24 16:00",
+    link: "https://www.hanteochart.com/",
   },
   {
     id: 1,
     image: secondImage,
     title: "[WhosPICK] 소풍 함께 가고 싶은 아이돌",
     period: "2025.03.18 11:00 - 2025.03.24 20:00",
+    link: "https://www.hanteochart.com/",
   },
   {
     id: 2,
     image: thirdImage,
     title: "[Whosfan Cafe] SF9 MINI ALBUM [LOVE]",
     period: "2025.03.11 10:00 - 2025.03.31 18:00",
+    link: "https://www.hanteochart.com/",
   },
 ];
 
@@ -48,7 +51,10 @@ export default function ChartPage() {
         {bannerItems.map((item) => {
           return (
             <SwiperSlide key={item.id} className="banner-wrapper">
-              <div className="banner-item">
+              <div
+                className="banner-item"
+                onClick={() => window.open(item.link)}
+              >
                 <img src={item.image} />
                 <div className="banner-item-badge">진행 중</div>
                 <div className="banner-item-content">
