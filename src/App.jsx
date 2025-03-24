@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import Appbar from "./components/Appbar/Appbar.jsx";
-import Footer from "./components/Footer/Footer.jsx";
-import Content from "./components/Content/Content.jsx";
+import Appbar from "./components/layout/Appbar/Appbar.jsx";
+import Footer from "./components/layout/Footer/Footer.jsx";
+import Content from "./components/layout/Content/Content.jsx";
 
 import ChartPage from "./pages/ChartPage.jsx";
 

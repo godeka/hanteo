@@ -3,8 +3,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import firstImage from "../assets/ChartBanner/first.jpeg";
-import secondImage from "../assets/ChartBanner/second.jpg";
+import firstImage from "../assets/banner/first.jpeg";
+import secondImage from "../assets/banner/second.jpg";
 
 import "./ChartPage.css";
 
