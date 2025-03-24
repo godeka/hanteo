@@ -52,6 +52,7 @@ export default function ChartPage() {
                 <img src={item.image} />
                 <div className="banner-item-content">
                   <div className="banner-item-title">{item.title}</div>
+                  <div className="banner-item-period">{item.period}</div>
                 </div>
               </div>
             </SwiperSlide>
