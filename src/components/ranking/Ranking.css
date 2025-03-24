@@ -1,0 +1,34 @@
+.ranking-container {
+  height: calc(100% - 220px);
+  padding: 10px 20px;
+  overflow-y: hidden;
+}
+.ranking-list {
+  height: 80%;
+  padding: 0;
+  overflow-y: scroll;
+}
+.ranking-item {
+  display: flex;
+  width: auto;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  text-align: start;
+}
+
+.ranking-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: #dfdfdf;
+  border-radius: 5%;
+}
+.ranking-number {
+  margin: 0 10px 0 0;
+}
+.ranking-artist {
+  font-size: 0.7rem;
+}
