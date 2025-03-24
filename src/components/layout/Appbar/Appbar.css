@@ -23,6 +23,9 @@
 .category-item button {
   border: 0;
   background-color: transparent;
+
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .current-category {
