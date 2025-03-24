@@ -47,7 +47,7 @@ export default function ChartPage() {
       <Swiper modules={[Pagination]} pagination>
         {bannerItems.map((item) => {
           return (
-            <SwiperSlide key={item.id}>
+            <SwiperSlide key={item.id} className="banner-wrapper">
               <div className="banner-item">
                 <img src={item.image} />
                 <div className="banner-item-content">

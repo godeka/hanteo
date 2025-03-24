@@ -1,3 +1,17 @@
+.swiper-pagination {
+  bottom: 0;
+}
+.swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+}
+.swiper-pagination-bullet-active {
+  background-color: rgb(255, 2, 158);
+}
+
+.banner-wrapper {
+  height: 240px;
+}
 .banner-item {
   background-color: white;
   width: 400px;
