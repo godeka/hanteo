@@ -29,9 +29,18 @@ const bannerItems = [
   },
 ];
 
+const rankingList = [
+  { id: 0, title: "Unexpected", artist: "THE BOYZ" },
+  { id: 1, title: "Fe304 : FORWARD", artist: "NMIXX" },
+  { id: 2, title: "ZERO : FEVER EPILOGUE", artist: "ATEEZ" },
+  { id: 3, title: "Only One Story", artist: "The Wind" },
+  { id: 4, title: "PLEASURE : 스페셜 미니앨범", artist: "TREASURE" },
+  { id: 5, title: "S", artist: "STAYC" },
+];
+
 export default function ChartPage() {
   return (
-    <div>
+    <>
       <Swiper modules={[Pagination]} pagination>
         {bannerItems.map((item) => {
           return (
@@ -46,6 +55,23 @@ export default function ChartPage() {
           );
         })}
       </Swiper>
-    </div>
+      <div className="ranking-container">
+        <h4>실시간</h4>
+        <ol className="ranking-list">
+          {rankingList.map((item) => {
+            return (
+              <li key={item.id} className="ranking-item">
+                <div className="ranking-img"></div>
+                <h4 className="ranking-number">{item.id + 1}</h4>
+                <div>
+                  <div className="ranking-title">{item.title}</div>
+                  <div className="ranking-artist">{item.artist}</div>
+                </div>
+              </li>
+            );
+          })}
+        </ol>
+      </div>
+    </>
   );
 }
